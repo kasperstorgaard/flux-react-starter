@@ -1,0 +1,29 @@
+{
+  "title": "Flux react starter",
+  "env": { "IS_DEV": true },
+  "browserify": {
+    "src": "./src/js/router.jsx",
+    "extensions":  [".jsx"],
+    "dest": "dist/js"
+  },
+  "browserSync": {
+    "baseDir": "./dist"
+  },
+  "html": {
+    "src": "src/index.html",
+    "dest": "dist",
+    "watch": "src/index.html",
+    "mainContainer": "main-container",
+    "footerContainer": "footer-container"
+  },
+  "images": {
+    "src": "src/gfx/**/*.*",
+    "dest": "dist/gfx",
+    "watch": "src/gfx/**/*.*"
+  },
+  "less": {
+    "src": "src/less/main.less",
+    "dest": "dist/css",
+    "watch": "src/less/**/*.less"
+  }
+}
